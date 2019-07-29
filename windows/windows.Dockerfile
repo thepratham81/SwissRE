@@ -1,5 +1,5 @@
 FROM microsoft/iis:latest
-RUN mkdir C:/testautomation
+RUN mkdir C:\testautomation
 #COPY source C:/testautomation/
 ADD source C:/testautomation/
 WORKDIR C:/testautomation
