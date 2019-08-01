@@ -3,4 +3,5 @@ RUN mkdir C:\testautomation
 COPY . C:/testautomation/
 #ADD windows C:/testautomation/
 WORKDIR C:/testautomation
-CMD C:/testautomation/sample.bat && cmd
+#CMD C:/testautomation/sample.bat && cmd
+CMD ["sample.bat"]
