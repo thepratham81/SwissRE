@@ -2,6 +2,7 @@ FROM ubuntu:latest
 RUN mkdir /testautomation
 COPY . /testautomation
 WORKDIR /testautomation
-ENTRYPOINT ["/bin/bash", "-l", "-c"]
+#ENTRYPOINT ["/bin/bash", "-l", "-c"]
 #CMD ["sample.bat"]
-CMD sh sample.bat
+ENTRYPOINT sh /testautomation/sample.bat
+CMD /bin/bash
